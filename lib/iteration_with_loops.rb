@@ -10,7 +10,7 @@ def find_min_in_nested_arrays(src)
       
       if src[index][iner] <= src[index][iner+1]
         save_min_value = src[index][iner]
-      else if save_min_value>src[index][iner]
+      else if save_min_value > src[index][iner]
         save_min_value = src[index][iner]
       end
       
