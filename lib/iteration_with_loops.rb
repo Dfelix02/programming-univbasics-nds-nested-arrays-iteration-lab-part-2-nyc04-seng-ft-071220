@@ -9,7 +9,7 @@ def find_min_in_nested_arrays(src)
       end
     end
     
-    array_of_min[index] = save_min_value
+    array_of_min << save_min_value
   end
   array_of_min
 end
