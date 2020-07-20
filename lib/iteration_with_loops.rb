@@ -8,12 +8,8 @@ def find_min_in_nested_arrays(src)
     src[index].size.times do |iner|
       
       if save_min_value > src[index][iner+1]
-        save_min_value = src[index][iner+]
-      
-      elsif save_min_value > src[index][iner] && save_min_value != 0
-        save_min_value = src[index][iner]
+        save_min_value = src[index][iner+1]
       end
-      
     end
     
     array_of_min << save_min_value
