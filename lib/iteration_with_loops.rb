@@ -7,7 +7,7 @@ def find_min_in_nested_arrays(src)
     
     save_min_value = src[index][count]
     
-    src[index].size-1.times do |iner|
+    src[index].size.times do |iner|
       
       if save_min_value > src[index][iner]
         save_min_value = src[index][iner]
