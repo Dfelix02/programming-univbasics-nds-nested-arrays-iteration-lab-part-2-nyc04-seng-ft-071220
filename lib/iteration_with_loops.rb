@@ -4,6 +4,7 @@ def find_min_in_nested_arrays(src)
   array_of_min = []
   count = 0
   src.size.times do |index|
+    
     save_min_value = src[index][count]
     
     src[index].size-1.times do |iner|
