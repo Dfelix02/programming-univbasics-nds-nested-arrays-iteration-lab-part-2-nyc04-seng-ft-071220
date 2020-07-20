@@ -1,3 +1,5 @@
+requires "pry"
+
 def find_min_in_nested_arrays(src)
   array_of_min = []
   save_min_value = 0
@@ -7,6 +9,7 @@ def find_min_in_nested_arrays(src)
         save_min_value = src[index][iner] 
       end
     end
+    binding.pry
     array_of_min[index] = save_min_value
   end
   array_of_min
