@@ -1,6 +1,4 @@
 def find_min_in_nested_arrays(src)
-  # src will be an array of arrays of integers
-  # Produce a new Array that contains the smallest number of each of the nested arrays
   array_of_min = []
   save_min_value = 0
   src.size.times do |index|
@@ -9,5 +7,7 @@ def find_min_in_nested_arrays(src)
         save_min_value = src[index][iner] 
       end
     end
+    array_of_min[index] = save_min_value
   end
+  array_of_min
 end
