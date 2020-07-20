@@ -5,7 +5,8 @@ def find_min_in_nested_arrays(src)
   count = 0
   src.size.times do |index|
     save_min_value = src[index][count]
-    src[index].size.times do |iner|
+    
+    src[index].size-1.times do |iner|
       
       if save_min_value > src[index][iner+1]
         save_min_value = src[index][iner+1]
